@@ -1,3 +1,6 @@
+import {User} from './userCard'
+import userData from '../components/user.json'
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <User userInfo={userData} />
     </div>
   );
 };
