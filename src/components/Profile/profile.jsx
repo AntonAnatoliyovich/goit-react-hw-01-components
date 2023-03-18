@@ -1,16 +1,18 @@
+import {Description, Image, Name, Tag, Location} from './profile.styled'
+
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
     <div class="profile">
-      <div class="description">
-        <img
+      <Description>
+        <Image
         src={avatar}
         alt="User avatar"
         class="avatar"
         />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
-      </div>
+        <Name>{username}</Name>
+        <Tag>{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
       <ul class="stats">
         <li>
