@@ -1,4 +1,4 @@
-import {User} from './userCard'
+import {UserCard} from './userCard'
 import userData from '../components/user.json'
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <User userInfo={userData} />
+      <UserCard userInfo={userData} />
     </div>
   );
 };

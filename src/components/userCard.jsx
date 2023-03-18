@@ -1,4 +1,4 @@
-export const User = ({ userInfo : { username, tag, location, avatar, stats } }) => {
+export const UserCard = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
     <div class="profile">
       <div class="description">
