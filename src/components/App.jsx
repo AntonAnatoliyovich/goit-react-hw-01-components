@@ -1,5 +1,5 @@
-import {UserCard} from './userCard'
-import userData from '../components/user.json'
+import {Profile} from './Profile/profile'
+import profile from '../components/Profile/user.json'
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <UserCard userInfo={userData} />
+      <Profile userInfo={profile} />
     </div>
   );
 };
