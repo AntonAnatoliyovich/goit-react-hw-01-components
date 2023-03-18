@@ -1,8 +1,8 @@
-import {Description, Image, Name, Tag, Location} from './profile.styled'
+import {Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity} from './profile.styled'
 
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
-    <div class="profile">
+    <Description>
       <Description>
         <Image
         src={avatar}
@@ -14,20 +14,20 @@ export const Profile = ({ userInfo : { username, tag, location, avatar, stats } 
         <Location>{location}</Location>
       </Description>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <Item>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </Item>
+        <Item>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </Item>
+        <Item>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </Item>
+      </Stats>
+    </Description>
     );
 };
