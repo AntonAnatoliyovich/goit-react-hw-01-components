@@ -7,7 +7,7 @@ export const Profile = ({ userInfo : { username, tag, location, avatar, stats } 
         <Image
         src={avatar}
         alt="User avatar"
-        class="avatar"
+        className="avatar"
         />
         <Name>{username}</Name>
         <Tag>{tag}</Tag>
