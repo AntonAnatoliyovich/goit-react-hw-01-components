@@ -1,4 +1,4 @@
-import {Section, Title, StatList, StatItem, StatSpan} from '../Statistics/statistics.styled';
+import { Section, Title, StatList, StatItem, StatSpan } from '../Statistics/statistics.styled';
 import getRandomHexColor from './randomColor';
 
 export const Statistics = ({ stats, title }) => {

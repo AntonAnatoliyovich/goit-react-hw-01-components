@@ -1,4 +1,4 @@
-import {Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity} from './profile.styled'
+import { Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity } from './profile.styled'
 
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (

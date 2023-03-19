@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Table = styled.table`
+margin-bottom: 25px;
 width: 360px;
 display: flex;
 flex-direction: column;

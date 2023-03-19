@@ -5,18 +5,18 @@ export const TransactionHistory = ({ items }) => {
         <Table>
             <Thead>
                 <TheadTr>
-                    <TheadTh>Type</TheadTh>
-                    <TheadTh>Amount</TheadTh>
-                    <TheadTh>Currency</TheadTh>
+                    <TheadTh className='thead-th'>Type</TheadTh>
+                    <TheadTh className='thead-th'>Amount</TheadTh>
+                    <TheadTh className='thead-th'>Currency</TheadTh>
                 </TheadTr>
             </Thead>
 
             <Tbody>
                 {items.map((item) => (
-                    <TbodyTr key={item.id}>
-                        <TbodyTd>{item.type}</TbodyTd>
-                        <TbodyTd>{item.amount}</TbodyTd>
-                        <TbodyTd>{item.currency}</TbodyTd>
+                    <TbodyTr key={item.id} className='tbody-tr'>
+                        <TbodyTd className='tbody-td'>{item.type}</TbodyTd>
+                        <TbodyTd className='tbody-td'>{item.amount}</TbodyTd>
+                        <TbodyTd className='tbody-td'>{item.currency}</TbodyTd>
                     </TbodyTr>
                 ))}
             </Tbody>
