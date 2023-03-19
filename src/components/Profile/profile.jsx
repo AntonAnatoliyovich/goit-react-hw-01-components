@@ -3,16 +3,14 @@ import {Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity} f
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
     <Description>
-      <Description>
-        <Image
-        src={avatar}
-        alt="User avatar"
-        className="avatar"
-        />
-        <Name>{username}</Name>
-        <Tag>{tag}</Tag>
-        <Location>{location}</Location>
-      </Description>
+      <Image
+      src={avatar}
+      alt="User avatar"
+      className="avatar"
+      />
+      <Name>{username}</Name>
+      <Tag>{tag}</Tag>
+      <Location>{location}</Location>
 
       <Stats>
         <Item>
