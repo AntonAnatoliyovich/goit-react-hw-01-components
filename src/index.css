@@ -31,3 +31,23 @@ ol {
 
   list-style: none;
 }
+
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.status.active {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.statistic-elem:last-child {
+  border: none;
+}
