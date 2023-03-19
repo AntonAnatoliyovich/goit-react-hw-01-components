@@ -26,7 +26,7 @@ border-top: 2px solid #31363d;
 `;
 
 export const StatItem = styled.li`
-width: 350px;
+width: 360px;
 display: flex;
 flex-direction: column;
 justify-content: center;

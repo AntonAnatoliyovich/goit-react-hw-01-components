@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const Description = styled.div`
-width: 350px;
+width: 360px;
 margin: 25px;
 background-color: paleturquoise;
 text-align: center;

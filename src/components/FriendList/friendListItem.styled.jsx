@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const FriendItem = styled.li`
-width: 350px;
+width: 360px;
 display: flex;
 align-items: center;
 border: 0.5px solid #31363d;
