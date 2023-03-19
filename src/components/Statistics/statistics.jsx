@@ -1,6 +1,6 @@
 import {Section, Title, StatList, StatItem, StatSpan} from '../Statistics/statistics.styled'
 
-export const Statistics =({ stats, title }) => {
+export const Statistics = ({ stats, title }) => {
     return (
         <Section>
             {title && (
