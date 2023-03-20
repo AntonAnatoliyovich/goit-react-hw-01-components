@@ -1,15 +1,16 @@
-import { Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity } from './profile.styled';
+import { Tag, Location, Stats, Item, Label, Quantity } from './profile.styled';
 import PropTypes from "prop-types";
+import css from './Profile.module.css';
 
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
-    <Description>
-      <Image
+    <div className={css.description}>
+      <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+      className={css.image}
       />
-      <Name>{username}</Name>
+      <p className={css.name}>{username}</p>
       <Tag>@{tag}</Tag>
       <Location>{location}</Location>
 
@@ -27,7 +28,7 @@ export const Profile = ({ userInfo : { username, tag, location, avatar, stats } 
           <Quantity>{stats.likes}</Quantity>
         </Item>
       </Stats>
-    </Description>
+    </div>
     );
 };
 

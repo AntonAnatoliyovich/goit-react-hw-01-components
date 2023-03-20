@@ -1,29 +1,29 @@
 import styled from '@emotion/styled'
 
-export const Description = styled.div`
-width: 360px;
-margin: 25px;
-background-color: paleturquoise;
-text-align: center;
-justify-content: center;
-align-items: center;
-`;
+// export const Description = styled.div`
+// width: 360px;
+// margin: 25px;
+// background-color: paleturquoise;
+// text-align: center;
+// justify-content: center;
+// align-items: center;
+// `;
 
-export const Image = styled.img`
-margin: 25px;
-background-color: lavender;
-border-radius: 50%;
-height: 200px;
-width: 200px;
-`;
+// export const Image = styled.img`
+// margin: 25px;
+// background-color: lavender;
+// border-radius: 50%;
+// height: 200px;
+// width: 200px;
+// `;
 
-export const Name = styled.p`
-margin: 0;
-font-family: 'Open Sans';
-color: #092658;
-font-size: 52px;
-font-weight: bold;
-`;
+// export const Name = styled.p`
+// margin: 0;
+// font-family: 'Open Sans';
+// color: #092658;
+// font-size: 52px;
+// font-weight: bold;
+// `;
 
 export const Tag = styled.p`
 margin-top: 10px;
