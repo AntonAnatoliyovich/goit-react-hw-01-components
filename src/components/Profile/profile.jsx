@@ -1,4 +1,5 @@
-import { Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity } from './profile.styled'
+import { Description, Image, Name, Tag, Location, Stats, Item, Label, Quantity } from './profile.styled';
+import PropTypes from "prop-types";
 
 export const Profile = ({ userInfo : { username, tag, location, avatar, stats } }) => {
     return (
@@ -29,3 +30,11 @@ export const Profile = ({ userInfo : { username, tag, location, avatar, stats } 
     </Description>
     );
 };
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.string,
+}

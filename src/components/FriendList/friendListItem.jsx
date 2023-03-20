@@ -1,4 +1,5 @@
 import { FriendItem, FriendSpan, FriendAvatar, FriendName } from './friendListItem.styled';
+import PropTypes from "prop-types";
 
 export const FriendListItem = ({ id, isOnline, avatar, name }) => {
     return (
@@ -8,4 +9,10 @@ export const FriendListItem = ({ id, isOnline, avatar, name }) => {
             <FriendName className="name">{name}</FriendName>
         </FriendItem>
     );
+};
+
+FriendListItem.propTypes = {
+    isOnline: PropTypes.bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
 };

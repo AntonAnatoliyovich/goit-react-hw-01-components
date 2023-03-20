@@ -1,4 +1,5 @@
 import { Table, Thead, TheadTr, TheadTh, Tbody, TbodyTr, TbodyTd } from "./TransactionHistory.styled";
+import PropTypes from "prop-types";
 
 export const TransactionHistory = ({ items }) => {
     return (
@@ -22,4 +23,10 @@ export const TransactionHistory = ({ items }) => {
             </Tbody>
         </Table>
     );
+};
+
+TransactionHistory.propTypes = {
+    type: PropTypes.string,
+    amount: PropTypes.number,
+    currency: PropTypes.string,
 };

@@ -1,5 +1,6 @@
 import { FriendListItem } from "./friendListItem";
 import { FriendInfo } from "./friendList.styled";
+import PropTypes from "prop-types";
 
 export const FriendList = ({ friends }) => {
     return (
@@ -9,4 +10,8 @@ export const FriendList = ({ friends }) => {
             ))}
         </FriendInfo>
     );
+};
+
+FriendList.propTypes = {
+    friends: PropTypes.string,
 };

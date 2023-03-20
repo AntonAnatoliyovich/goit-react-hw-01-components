@@ -1,5 +1,6 @@
 import { Section, Title, StatList, StatItem, StatSpan } from '../Statistics/statistics.styled';
 import getRandomHexColor from './randomColor';
+import PropTypes from "prop-types";
 
 export const Statistics = ({ stats, title }) => {
     return (
@@ -18,4 +19,9 @@ export const Statistics = ({ stats, title }) => {
             </StatList>
         </Section>
     );
+};
+
+Statistics.propTypes = {
+    label: PropTypes.string,
+    percentage: PropTypes.number,
 };
