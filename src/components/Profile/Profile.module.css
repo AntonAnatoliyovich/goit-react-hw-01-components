@@ -1,24 +1,75 @@
 .description {
     width: 360px;
-margin: 25px;
-background-color: paleturquoise;
-text-align: center;
-justify-content: center;
-align-items: center;
+    margin: 25px;
+    background-color: paleturquoise;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
     margin: 25px;
-background-color: lavender;
-border-radius: 50%;
-height: 200px;
-width: 200px;
+    background-color: lavender;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 .name {
     margin: 0;
-font-family: 'Open Sans';
-color: #092658;
-font-size: 52px;
-font-weight: bold;
+    font-family: 'Open Sans';
+    color: #092658;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.tag {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-family: 'Open Sans';
+    color: #092658;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.location {
+    margin: 10px;
+    font-family: 'Open Sans';
+    color: #092658;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.stats {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #637798;
+    border: 2px solid #31363d;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans';
+    color: #08275a;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.label {
+    font-family: 'Open Sans';
+    color: #e4eaf6;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.quantity {
+    font-family: 'Open Sans';
+    color: #e4eaf6;
+    font-size: 26px;
+    font-weight: bold;
 }
