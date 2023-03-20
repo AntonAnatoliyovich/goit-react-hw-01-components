@@ -29,6 +29,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-right: 0.5px solid #31363d;
+&:last-child {
+    border-right: none;
+}
 `;
 
 export const Tbody = styled.tbody`
@@ -42,6 +45,12 @@ export const TbodyTr = styled.tr`
 display: flex;
 align-items: center;
 border-bottom: 0.5px solid #31363d;
+&:nth-child(2n) {
+    background-color: #8792a3;
+};
+&:last-child {
+    border-bottom: none;
+}
 `;
 
 export const TbodyTd = styled.td`
@@ -50,4 +59,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-right: 0.5px solid #31363d;
+&:last-child {
+    border-right: none;
+}
 `;

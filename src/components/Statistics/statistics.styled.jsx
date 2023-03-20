@@ -32,6 +32,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 border-right: 2px solid #31363d;
+&:last-child{
+    border-right: none
+}
 `;
 
 export const StatSpan = styled.span`

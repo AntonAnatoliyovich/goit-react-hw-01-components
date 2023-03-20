@@ -5,8 +5,8 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
     return (
         <FriendItem>
             <FriendSpan className={"status " + (isOnline === true ? "active" : "")}></FriendSpan>
-            <FriendAvatar className="avatar" src={avatar} alt="User avatar" width="48" />
-            <FriendName className="name">{name}</FriendName>
+            <FriendAvatar src={avatar} alt="User avatar" width="48" />
+            <FriendName>{name}</FriendName>
         </FriendItem>
     );
 };

@@ -47,23 +47,3 @@ ol {
   background-color: green;
   border-radius: 50%;
 }
-
-.statistic-elem:last-child {
-  border: none;
-}
-
-.tbody-tr:nth-child(2n) {
-  background-color: #8792a3;
-}
-
-.tbody-tr:last-child {
-  border-bottom: none;
-}
-
-.thead-th:last-child {
-  border-right: none;
-}
-
-.tbody-td:last-child {
-  border-right: none;
-}
