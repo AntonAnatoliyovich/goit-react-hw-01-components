@@ -6,12 +6,12 @@ export const FriendList = ({ friends }) => {
     return (
         <FriendInfo>
             {friends.map(friend => (
-                <FriendListItem id={friend.id} isOnline={friend.isOnline} avatar={friend.avatar} name={friend.name} />
+                <FriendListItem key={friend.id} isOnline={friend.isOnline} avatar={friend.avatar} name={friend.name} />
             ))}
         </FriendInfo>
     );
 };
 
 FriendList.propTypes = {
-    friends: PropTypes.string,
+    friends: PropTypes.array,
 };
